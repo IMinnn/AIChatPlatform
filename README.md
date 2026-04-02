@@ -13,7 +13,7 @@
 1. 进入项目目录：
 
 ```bash
-cd /Users/hm/CodeProjects/OpenAICodex/AIPlatform
+cd .../AIPlatform
 ```
 
 2. 安装依赖：
@@ -56,36 +56,6 @@ pnpm build
 pnpm start
 ```
 
-## Python Backend
-
-项目里已经新增了一个独立的 Python 后端迁移目录：
-
-`backend/`
-
-当前已迁移的核心接口包括：
-
-- `GET/PUT /api/settings`
-- `GET /api/models`
-- `GET/PUT /api/model-providers`
-- `GET/POST /api/knowledge-bases`
-- `GET/POST /api/conversations`
-- `GET/PATCH/DELETE /api/conversations/{conversation_id}`
-- `POST /api/chat`
-
-启动方式：
-
-```bash
-cd /Users/hm/CodeProjects/OpenAICodex/AIPlatform
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r backend/requirements.txt
-uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
-```
-
-说明：
-
-- 当前前端还没有强制切换到 Python 后端，迁移会分阶段完成
-- Python 后端与现有前端共享 `data/models.json` 和 `storage/app-state.json`
 
 ## 说明
 
