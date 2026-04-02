@@ -1,0 +1,32 @@
+{
+  "providers": [
+    {
+      "id": "provider_qwen_bailian",
+      "name": "百炼千问",
+      "kind": "custom",
+      "models": [
+        {
+          "id": "qwen3.5-plus",
+          "name": "qwen3.5-plus",
+          "apiUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+          "token": "YouModelKey",
+          "enabled": true
+        },
+        {
+          "id": "qwen3.5-flash",
+          "name": "qwen3.5-flash",
+          "apiUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+          "token": "YouModelKey",
+          "enabled": true
+        },
+        {
+          "id": "kimi-k2.5",
+          "name": "kimi-k2.5",
+          "apiUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+          "token": "YouModelKey",
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

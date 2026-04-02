@@ -1,0 +1,11 @@
+.next
+node_modules
+dist
+.DS_Store
+uploads/*
+!uploads/.gitkeep
+storage/*.json
+!storage/.gitkeep
+backend/**/__pycache__/
+*.pyc
+tsconfig.tsbuildinfo
